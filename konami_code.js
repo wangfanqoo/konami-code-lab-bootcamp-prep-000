@@ -7,7 +7,10 @@ function init(e) {
  if(key === code[i]) {
    i++;
    if (i === code.length) {
-     alert("")
+     alert("congratulation!");
+    i = 0;
+   }}else {
+   i = 0 ;
+   
    }
-
 }
