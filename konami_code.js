@@ -6,14 +6,15 @@ document.body.addEventListener('keydown',function init(e) {
   
  
  const key = parseInt(e.detail || e.which);
+ if (key === code[index]) {
+    index++;
  
- if(key === code[i]) {
-   i++;
-   if (i === code.length) {
-     alert("congratulation!");
-    i = 0;
-   }}else {
-   i = 0 ;
-   
-   }
-})
+    if (index === code.length) {
+      alert("Hurray!");
+ 
+      index = 0;
+    }
+  } else {
+    index = 0;
+  }
+})}
