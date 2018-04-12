@@ -1,6 +1,6 @@
 const code = [38, 38, 40, 40, 37, 39, 37, 39, 66, 65]
 
-function init(e) {
+document.body.addEventListener('keydown',function init(e) {
  let i = 0;
  const key = parseInt(e.detail || e.which);
  
@@ -13,4 +13,4 @@ function init(e) {
    i = 0 ;
    
    }
-}
+})
